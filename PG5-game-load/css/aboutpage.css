@@ -1,0 +1,136 @@
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://i.ibb.co/ck8MZKf/work.jpg);
+}
+
+.search-idea {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+ }
+ 
+.search-idea:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+ 
+.search-idea:hover > .search-btn {
+  background: white;
+  color: black;
+}
+ 
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+}
+ 
+.search-btn > i {
+  font-size: 30px;
+}
+ 
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+ 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 60px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: silver;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  font-size: 16px;
+}
+.label {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom:100px;
+  color: white;
+}
+#quan-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+body > h1 {
+  text-align: center;
+}
+
+.Alyssa-about {
+    background-image:url(https://i.ibb.co/M2MbB2G/Jumbotron-About-Page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 10%;
+    height: 100vh;
+}
+
+.Alyssa-h1 {
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.Alyssa-wt {
+    color: white;
+}
+

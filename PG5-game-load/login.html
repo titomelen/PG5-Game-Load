@@ -1,0 +1,117 @@
+<title> Iniciar Sesión </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/ico" href="https://i.ibb.co/RPpgHyz/logo.jpg">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/login.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/login.js"></script>
+
+
+<div class="login_box">
+
+  <div class="input-section1">
+    <i class="far fa-user" style="color: #ddd; padding:3px;"></i>
+    <input class="input1" type="text" id="user" placeholder="Usuario" name="Name"> <span id="errormessage1" style="color:red; font-size:20px"> </span>
+  </div>
+  <div class="input-section2">
+    <i class="fas fa-lock" style="color: #ddd; padding:3px;"></i>
+    <input class="input2" type="password" id="password" placeholder="Contraseña" name="Password"> <span id="errormessage2" style="color:red; font-size:20px"> </span>
+  </div>
+
+  <label style="color:white; font-size:16px ">
+    <input type="checkbox" checked="checked" name="remember" id="remember_me" style="margin-bottom:15px;"> Mantenerme conectado
+  </label>
+
+  <div class="input-section hidden">
+
+    <div class="input-section3">
+      <i class="far fa-user" style="color: #ddd; padding:3px;"></i>
+      <input class="input1a" type="text" id="Username" placeholder="Username" size="25"> <span id="errormessage3" style="color:red; font-size:20px"> </span>
+    </div>
+    <div class="input-section4">
+      <i class="fas fa-lock" style="color: #ddd; padding:3px;"></i>
+      <input class="input2a" type="password" id="Password" placeholder="Password" size="25"> <span id="errormessage4" style="color:red; font-size:20px"> </span><br>
+      <span id="passwordmessage" style="color:red; font-size:10px"> </span>
+    </div>
+    <div class="input-section5">
+      <i class="fas fa-address-card" style="color: #ddd; padding:3px;"></i>
+      <input class="input4" pattern="[A-Za-z]" type="text" id="Name" placeholder="Name" size="25"><span id="errormessage5" style="color:red; font-size:20px"> </span><br>
+    </div>
+    <div class="input-section6">
+      <i class="far fa-envelope" style="color: #ddd; padding:3px;"></i>
+      <input class="input5" type="email" placeholder="Email Address" id="Email" size="25"><span id="errormessage6" style="color:red; font-size:20px"> </span><br>
+    </div>
+    <button class="btn" id="register-btn" onclick="register()">Registrarse</button>
+
+  </div>
+  <button class="btn" id="login-btn" onclick="validate()">Iniciar Sesión</button>
+
+  <div class="question-box">
+    <p class="question">¿No eres miembro?</p><a class="reg-btn" href="registro.html"> Registrarse</a><br>
+
+    <span class="left social-login" style="color:white; font-size:16px">
+      Registrarse con
+      <a href="https://www.twitter.com"> <i class="fa fa-twitter"   aria-hidden="true"   style="color:skyblue; padding:3px;"></i></a>
+      <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true" style="color:#0F52BA; padding:3px;"></i></a>
+      <a href="https://www.gmail.com">  <i class="fa fa-google-plus" aria-hidden="true" style="color:red; padding:3px;"></i></a>
+    </span>
+  </div>
+
+  <div class="container" style="text-align:center; padding-top:10px;">
+    <a href="#" data-target="#pwdModal" data-toggle="modal" style="color:white; text-align:center">¿Olvidaste tu contraseña?</a>
+  </div>
+</div>
+
+<div class="success-box">
+  <h1>¡Has iniciado sesión!</h1>
+</div>
+
+<div class="success-box1">
+  <h1>¡Registrado con éxito!</h1>
+</div>
+
+<!--modal-->
+<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="text-center">
+                <p>Si ha olvidado su contraseña, por favor pulse aquí para restablecerla.</p>
+                <div class="panel-body">
+                  <fieldset>
+                    <div class="form-group">
+                      <input class="form-control input-lg" id="ForgotPassEmail" placeholder="Email*" name="email" type="email">
+                      <br>
+                      <input class="form-control input-lg fpass1" type="password" id="fpassword" placeholder="Contraseña*" name="Password"><br>
+                      <input class="form-control input-lg fpass2" type="password" id="confirm_password" placeholder="Confirmar contraseña*" name="Password">
+                    </div>
+                    <input class="button btn-lg btn-primary btn-block" value="Enviar contraseña" type="submit" onclick="forgotpassword()">
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="col-md-12">
+          <button class="buttoncancel" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

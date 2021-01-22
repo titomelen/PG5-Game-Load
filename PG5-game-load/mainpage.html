@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameload</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="icon" href="./img/logo.jpg"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pago.js"></script>
+    <link rel="stylesheet" href="css/correo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top round-lg" style="background-color: #161A21; opacity:0.9">
+        <a class="navbar-brand border-right border-white" href="mainpage.html" style="padding-right: 20px">
+            <!-- Caution: Max height of the navigation bar from Bootstrap is 68px.-->
+            <img src="./img/logo.jpg" alt="Comet Games" style="max-height: 35px; height: 100%; width: auto; margin: 0 auto; display: inline-block">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="mainpage.html">
+                        Inicio
+                        <span class="sr-only">
+                            (current)
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Videojuegos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="videojuegos/accion.html">Acción</a>
+                      <a class="dropdown-item" href="videojuegos/aventura.html">Aventuras</a>
+                      <a class="dropdown-item" href="videojuegos/disparos.html">Disparos</a>
+                      <a class="dropdown-item" href="videojuegos/deportes-y-carreras.html">Deportes & Carreras</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Consolas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="consola/playstation5.html">Playstation 5</a>
+                    <a class="dropdown-item" href="consola/xbox-series-x.html">Xbox Series X</a>
+                    <a class="dropdown-item" href="consola/playstation4.html">Playstation 4</a>
+                    <a class="dropdown-item" href="consola/xbox-one.html">Xbox One</a>
+                    <a class="dropdown-item" href="consola/switch.html">Nintendo Switch</a>
+                </div>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="aboutpage.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button type="submit" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 8px;">
+                  <a class="boton-personalizado" href="login.html">Iniciar Sesión</a>
+            </form>
+        </div>
+    </nav>
+    <section class="Alyssa-CTA">
+        <img src="./img/logo.jpg" width="300px" height="300px" style="padding:50px">
+        <h1 class="Alyssa-h1">Bienvenido GameLoad!</h1>
+        <input id="buscador" class="form-control mr-sm-2 Alyssa-searchbar animate__animated animate__backInUp" type="search"
+            placeholder="Busca tus juegos favoritos..." aria-label="Search">
+        <button onclick="buscar()" class="Alyssa-button Alyssa-gradient animate__animated animate__backInUp">Buscar!</button>
+    </section>
+ <hr class="section-divider" style="border-top: 2px solid silver; width: 75%">
+    <section class="Alyssa-sec2">
+    <div class="container" style="margin: 0 auto;">
+    <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="Alyssa-bold">¡Tanta pasión que sale fuego, 'cuidao' que quema!</h1>
+      <p class="Alyssa-space">Los videojuegos se están convirtiendo cada vez más en una normalidad en nuestra sociedad moderna. Los videojuegos impulsan nuestros reflejos, creatividad y pensamiento, y nos brindan experiencias que difícilmente se pueden encontrar en nuestras vidas mundanas.
+         En GameLoad, nos comprometemos a ofrecerte los mejores juegos posibles, a los mejores precios posibles, con el mejor servicio posible.
+      </p>
+      <p>Todos nuestros artículos son puramente libres de DRM!</p>
+      <p>Ofertas todos los miercoles!</p>
+      <p>Excelentes precios para grandes juegos!</p>
+      <p>Baja y obtén tus videojuegos favoritos!</p>
+      <h2 class="text-danger" style="font-weight: 500; font-style:initial; display:flex; justify-content: center;">No pierdas la oportunidad.</h2>
+    </div>
+    <div class="col-sm-12 col-md-6">
+ <img class="xs-hidden" src="https://img-9gag-fun.9cache.com/photo/aXjQzVb_700bwp.webp" style="max-width: 100%;height: auto">
+    </div>
+  </div>
+  </div>
+</section>
+<hr class="section-divider" style="border-top: 2px solid silver; width: 75%">
+ <!---This is Tuong section-->
+  <section class="smith-section wrap" >
+
+    <!--Carousel-->
+    <div id="CometCarousel" class="carousel slide carousel-slide" data-ride="carousel">
+    <h2 class="Alyssa-bold text-white" style="color:white; margin:20px">Últimas Novedades</h2>  
+    <ol class="carousel-indicators">
+      <li data-target="#CometCarousel" data-slide-to="0"></li>
+      <li data-target="#CometCarousel" data-slide-to="1"></li>
+      <li data-target="#CometCarousel" data-slide-to="2"></li>
+      <li data-target="#CometCarousel" data-slide-to="3"></li>
+      <li data-target="#CometCarousel" data-slide-to="4" class="active"></li>
+      <li data-target="#CometCarousel" data-slide-to="5"></li>
+      <li data-target="#CometCarousel" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=tuLAn9adQpI"><img  id="carousel-image" class="d-block w-100 img-responsive" src="img/fifa21.jpg" alt="First slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-left h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">FIFA 21 -<br> Electronic Arts </h5>
+              <p class="card-text"><u>MULTIPLATAFORMA</u><br>
+                Precio: $49.99
+              </p>
+              <a onclick="pagar(49.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=pmuh9RBj49A"><img id="carousel-image" class="d-block w-100 img-responsive" src="img/callduty.png" alt="Second slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold">CALL OF DUTY CALL WAR -<br> Treyarch,Beenox</h5>
+              <p class="card-text"><u>MULTIPLATAFORMA</u><br>
+                Precio: $59.99
+              </p>
+              <a onclick="pagar(59.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=ZH0VC-MTAzE"><img id="carousel-image" class="d-block w-100 img-responsive" src="img/rainbow.jpg" alt="Third slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">RAINBOW SIX SIEGE -<br> Ubisoft</h5>
+              <p class="card-text"><u>MULTIPLATAFORMA</u><br>
+                Precio: $14.99
+              </p>
+              <a onclick="pagar(14.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="carousel-item active" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=ssrNcwxALS4"><img id="carousel-image" class="d-block w-100 img-responsive" src="img/assesin.jpg" alt="Second slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">ASSASIN'S CREED VALHALLA -<br> Ubisoft Montreal</h5>
+              <p class="card-text"><u>MULTIPLATAFORMA</u><br>
+                Precio: $49.99
+              </p>
+              <a onclick="pagar(49.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link h-100" href="https://www.youtube.com/watch?v=WShCN-AYHqA"><img id="carousel-image" class="d-block w-100 img-responsive" src="img/smash.jpg" alt="Second slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">SUPER SMASH BROS ULTIMATE -<br> Nintendo Entertainment, BANDAI NAMCO Studios</h5>
+              <p class="card-text"><u>NINTENDO SWTICH</u><br>
+                Precio: $49.50
+              </p>
+              <a onclick="pagar(49.50)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=s0Xe1ggWDUI"><img class="d-block w-100 img-responsive" src="img/goku.jpg" alt="Second slide"></a>
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">DRAGON BALL Z: KAKAROT-<br> Bandai Namco Entertainment</h5>
+              <p class="card-text"><u>MULTIPLATAFORMA</u><br>
+                Precio: $29.99
+              </p>
+              <a onclick="pagar(29.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <a class="trailer-link" href="https://www.youtube.com/watch?v=ai3o0XtrnM8"><img class="d-block w-100 img-responsive" src="img/ratchet.jpg"  alt="Second slide"></a>
+        <div class="carousel-caption  d-none d-sm-block">
+          <div class="card float-right h-100" style="width: 18rem; background-color: rgba(255,255,255,0.9);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.4); color:black; z-index:1">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">RATCHET AND CLANK RIFT APART -<br> Insomniac Games</h5>
+              <p class="card-text"><u>PLAYSTATION 5</u><br>
+                Precio: $59.99
+              </p>
+              <a onclick="pagar(59.99)" class="btn btn-danger">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#CometCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="color:silver; border-radius:100%; background-color:black; border: 2px solid silver"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#CometCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="color:silver; border-radius:100%; background-color:black; border: 2px solid silver"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--end of carousel-->
+<hr class="section-divider" style="border-top: 2px solid silver; width: 75%">
+
+  <!--Old but Good Titles-->
+
+ <div class="smith-container-oldgames" style ="margin:20px;">
+       <h2 class="Alyssa-bold text-white" style="color:white">Check out our Oldies but Goodies!</h2> 
+      <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+          <div class="col mb-4" >
+          <div class="card h-100" style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <a href="https://www.youtube.com/watch?v=avAXhnbs69w" class="trailer-link"><img src="img/hitman.jpg" class="card-img-top" alt="Battle Brothers"></a>
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">HITMAN 3</h5>
+          <p class="card-text text-left"><u>MULTIPLATAFORMA.</u><br>
+            El juego trata de un asesino profesional que tiene que eliminar diferentes objetivos en diferentes lugares en el mundo.<br>El objetivo principal es eliminar al objetivo sin que los guardias.<br>  
+          Precio: <strong>$58</strong></p>
+          <a onclick="pagar(58.00)" class="btn btn-danger float-right" style ="font-weight: 400">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100"style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <a href="https://www.youtube.com/watch?v=8a_Ww3dBy80" class="trailer-link"><img src="img/marvel.jpg" class="card-img-top" alt="Fallout New Vegas"></a>
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">MARVEL'S AVENGERS</h5>
+          <p class="card-text text-left"><u>MULTIPLATAFORMA.</u><br>
+            Es un juego épico de acción y aventura en tercera persona que combina una historia cinematográfica original con el juego en solitario o cooperativo.<br>
+          Precio: <strong>$39.51</strong></p>
+          <a onclick="pagar(39.51)" class="btn btn-danger float-right" style ="font-weight: 400">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100" style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <a href="https://www.youtube.com/watch?v=tKlRN2YpxRE" class="trailer-link"><img src="img/mario.png" class="card-img-top" alt="FEAR"></a>
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">MARIO KART 8 DELUXE</h5>
+          <p class="card-text text-left"><u>NINTENDO SWITCH</u><br>
+            Deluxe es la última entrega del famoso y divertido juego de carreras de Nintendo.<br>
+            Puedes jugar en el modo de un jugador en 48 circuitos diferentes corriendo contra otros 11 oponentes.<br> 
+          Precio: <strong>$45.95</strong></p>
+          <a onclick="pagar(45.95)" class="btn btn-danger float-right" style ="font-weight: 400">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100" style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <a href="https://www.youtube.com/watch?v=Jy00FgZNias" class="trailer-link"><img src="img/nba.jpg" class="card-img-top" alt="Dead Space"></a>
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">NBA 2K21</h5>
+          <p class="card-text text-left"><u>MULTIPLATAFORMA.</u><br>
+            NBA 2K21 es el simulador de baloncesto profesional y callejero de Visual Concepts y 2K Sports.<br> 
+            Una experiencia de baloncesto mucho más profunda que lo que habían conseguido hasta ahora, añadiendo mejoras jugables y cambios en el comportamiento de los jugadores o incluso gráficos más realistas.<br>
+            Precio: <strong>$31.94</strong></p>
+            <a onclick="pagar(31.94)" class="btn btn-danger float-right" style ="font-weight: 400">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100" style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <a href="https://www.youtube.com/watch?v=BO8lX3hDU30" class="trailer-link"><img src="img/cyberpunk.jpg" class="card-img-top" alt="Stronghold Crusader HD"></a>
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">CYBERPUNK 2077</h5>
+          <p class="card-text text-left"><u>MULTIPLATAFORMA.</u><br>
+            <em>"Es un mundo abierto con seis distritos diferentes, con una perspectiva de primera persona y los jugadores asumen el papel del personaje personalizable llamado V, quienes pueden mejorar sus estadísticas con experiencia</em><br>
+            Precio: <strong>$59.95</strong></p>
+            <a onclick="pagar(59.95)" class="btn btn-danger float-right" style ="font-weight: 400">COMPRAR</a>
+           </div>
+         </div>
+        </div>
+       </div>
+    </div>    
+<!--end of oldies but goodies-->
+<hr class="section-divider" style="border-top: 2px solid silver; width: 75%">
+
+<!--map section-->
+<div class="smith-container-map" style="margin:20px">
+  <!--Section: Contact v.1-->
+<div class="section cols-1 cols-md-2">
+
+  <!--Section heading-->
+  <h4 class="section-heading h4 pt-4" style ="margin:20px; color:white">Contacta con nosotros</h4>
+  <!--Section description-->
+  <p class="section-description pb-4" style ="margin:20px; color:white">Actualmente tenemos una pequeña oficina en <em>Sevilla, Andalucía, España.</em>
+    Estaremos encantados de atenderle!!
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-5 mb-4">
+
+      <!--Form with header-->
+      <div class="card h-100 w-100", style="box-shadow: 0 5px 15px rgba(0,0,0,0.4)">
+        <div class="card-body">
+          <!--Header-->
+          <div class="text-center">
+          <div class="form-header btn btn-primary" style="
+          padding: 1rem;
+          margin-top: -3.13rem;
+          margin-bottom: 3rem;
+          color: #fff;
+          text-align: center;
+          border-radius: .125rem;
+          box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);"
+          >
+          <!--Contacto-->
+          <h4><i class="fas fa-envelope"></i> Escríbenos</h4>
+          </div>
+          </div>
+          <form id="form">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Nombre y apellidos">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                </div>
+                <input type="text" class="form-control" id="email" placeholder="Correo Electrónico">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-tag"></i></span>
+                </div>
+                <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                </div>
+              </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-pen"></i></span>
+                </div>
+                <textarea type="text" class="form-control" rows="5" id="text" placeholder="Escribe lo que quieras aquí"></textarea>
+                </div>
+              </div>
+            <div class="form-group">
+              <div class="input-group justify-content-center" >
+            <button class="btn btn-danger" value="Enviar un email" onclick="parent.location='mailto:bachilon97@gmail.com'">Enviar</button>
+          </div>
+          </form>
+        </div>        
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-7 mb-4">
+
+      <!--Google map-->
+      <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 300px">
+        <iframe width="300" height="300" frameborder="0" style="border:0" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1584.5921187684412!2d-5.929101841844405!3d37.40911999495694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1268cdc967ede3%3A0xbd2c0a20ffc400e4!2sADA-ITS!5e0!3m2!1ses!2ses!4v1605889116494!5m2!1ses!2ses" allowfullscreen></iframe> 
+      </div>
+
+      <br>
+      <!--Iconos-->
+      <div class="row text-center text-white">
+        <div class="col-md-4" ">
+          <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt fa-2x text-danger"></i></a>
+          <p>Sevilla, Andalucía</p>
+          <p>España</p>
+        </div>
+
+        <div class="col-md-4" ">
+          <a class="btn-floating blue accent-1"><i class="fas fa-phone fa-2x text-danger"></i></a>
+          <p>+34-656-885-292</p>
+          <p>Lunes - Viernes, 8:00-17:00</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-envelope fa-2x text-danger"></i></a>
+          <a href="#" value="Enviar un email" onclick="parent.location='mailto:gameload@gmail.com'"><p>gameload@gmail.com</p></a>
+          <a href="#" value="Enviar un email" onclick="parent.location='mailto:gameLoadPlayFire@outlook.com'"><p>gameLoadPlayFire@outlook.com</p></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!--Footer-->
+</div>
+</section>
+    <nav class="navbar navbar-expand-lg navbar-dark round-lg" style="background-color: #161A21;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="margin: 0 auto;">
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="derechos.html">Derechos de autor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="politicas.html">Política de privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="rembolsos.html">Rembolsos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="https://kit.fontawesome.com/c5ed0f55e9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('user_W4fuk982YyoWQtxf8Ojx0')
+  </script>
+    <script>
+
+      
+        document.getElementById('form')
+        .addEventListener('submit', function (event) {
+          event.preventDefault();
+
+     //     btn.value = 'Enviando...';
+
+          const serviceID = 'default_service';
+          const templateID = 'template_nwhdt7x';
+
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+             btn.value = 'Send Email';
+              alert('Sent!');
+            }, (err) => {
+             btn.value = 'Send Email';
+              alert(JSON.stringify(err));
+            });
+        });
+      
+     
+    </script>
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('user_W4fuk982YyoWQtxf8Ojx0')
+    </script>
+</body>
+
+</html>

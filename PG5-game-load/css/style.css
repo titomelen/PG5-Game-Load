@@ -1,0 +1,178 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://i.ibb.co/CKXNftz/fondo-Game.png);
+}
+
+:root {
+  --dark: #161a21;
+}
+
+.dark {
+  color: var(--dark);
+  background-color: #3f4857;
+}
+
+.map-container-6 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.henry-dark {
+  color: #161a21;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  background-color: #2b3240 !important;
+  border-radius: 30px;
+}
+
+.search-idea {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.search-idea:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-idea:hover > .search-btn {
+  background: white;
+  color: black;
+}
+
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+}
+
+.search-btn > i {
+  font-size: 30px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.Alyssa-CTA {
+  background-image: url(https://i.ibb.co/Dk0cXpw/Jumbotron-Image.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Alyssa-h1 {
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 50px;
+  animation: text 2s 1;
+  margin: 3%;
+}
+
+@keyframes text {
+  30% {
+    letter-spacing: 10px;
+  }
+}
+
+.Alyssa-searchbar {
+  max-width: 600px;
+  width: 90%;
+  padding-left: 36px;
+  background-image: url(https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 8px;
+  background-position-y: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.Alyssa-button {
+  margin: 50px;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 15px;
+  border: none;
+}
+
+.Alyssa-gradient {
+  background-image: linear-gradient(to right, #29c1ad 0%, #96e721 100%);
+}
+
+.Alyssa-gradient:hover {
+  background-position: right center;
+}
+
+.Alyssa-sec2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  margin: 5px auto;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 100px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
